@@ -23,7 +23,15 @@
 +	删除文件 --- `rm ReadMe.md`
 	+	若想恢复，则可执行撤销操作
 
++	本地仓库与远程仓库的关联 --- `git remote add origin https://...`
+	+	本地仓库分支推送到远程仓库 --- `git push -u origin 分支名`
+	+	由于第一次提交，远程仓库的master是空的，因此上面带了个`-u`,后续可以直接`git push`到远程关联的分支上
 
++	创建分支 --- `git checkout -b 分支名`
+	+	查看本地已有分支 --- `git branch`
+	+	查看远端已有分支 --- `git branch -r`
+	+	查看本地和远端所有分支 --- `git branch -a`
+	+	切换分支 --- `git checkout 分支名`
 ## 题外话 ##
 +	往Github上传项目
 ![](./img/how_to_upload.png)
