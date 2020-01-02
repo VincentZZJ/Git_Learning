@@ -32,6 +32,10 @@
 	+	查看远端已有分支 --- `git branch -r`
 	+	查看本地和远端所有分支 --- `git branch -a`
 	+	切换分支 --- `git checkout 分支名`
+	+	分支合并 --- `git merge develop (当前在master分支)`
+	+	删除分支 --- `git branch -d 分支名`
+	+	![](./img/merge.png)
++	
 ## 题外话 ##
 +	往Github上传项目
 ![](./img/how_to_upload.png)
