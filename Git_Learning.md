@@ -20,10 +20,10 @@
 +	**回退版本(撤销commit)**
 	+	回退上一个版本 --- `git reset --hard HEAD^`
 	+	回退到前N个版本 --- `git reset --hard HEAD~n`
-	+	回退到指定版本 --- `git reset --hard 版本号`
-		** --hard : 强制回退，工作区已修改的代码清空(谨慎操作！)**  
-		** --mixed : 不删除工作空间改动代码，撤销commit，并且撤销`git add .` 操作**
-		** --soft : 不删除工作空间改动代码，撤销commit，不撤销`git add .` **
+	+	回退到指定版本 --- `git reset --hard 版本号`  
+	**--hard : 强制回退，工作区已修改的代码清空(谨慎操作！)**  
+	**--mixed : 不删除工作空间改动代码，撤销commit，并且撤销`git add .` 操作**    
+	**--soft : 不删除工作空间改动代码，撤销commit，不撤销`git add .`操作**
 
 +	**查看提交历史的版本号(对应上面的回退处理)**	--- `git reflog`  
 	+	![](./img/reset.png)
@@ -62,10 +62,10 @@
 ```
 	+	将当前未完成的工作先暂存起来 --- `git stash`
 	+	查看暂存起来的内容 --- `git stash list`
-	+	恢复暂存内容 --- `git stash apply`
-	+	恢复暂存的内容并删除stash对应数据 --- `git stash pop`
-	+	删除暂存内容 --- `git stash drop`
-
+	+	恢复暂存内容 --- `git stash apply   // 指定 git stash apply stash@{0}`
+	+	恢复暂存的内容并删除stash对应数据 --- `git stash pop  // 指定 git stash pop stash@{0}`
+	+	删除暂存内容 --- `git stash drop  // 指定 git stash drop stash@{0}`  
+	+	![](./img/stash.png)
 
 ## 题外话 ##
 +	**往Github上传项目**
