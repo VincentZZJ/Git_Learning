@@ -17,10 +17,13 @@
 +	**将文件添加到*暂存区*** ---  `git add . / git add ReadMe.md`
 +	**将暂存区文件提交到*本地仓库*** ---  `git commit -m "some tips"`
 +	**查看提交历史** ---  `git log`
-+	**回退版本**
++	**回退版本(撤销commit)**
 	+	回退上一个版本 --- `git reset --hard HEAD^`
 	+	回退到前N个版本 --- `git reset --hard HEAD~n`
 	+	回退到指定版本 --- `git reset --hard 版本号`
+		** --hard : 强制回退，工作区已修改的代码清空(谨慎操作！)**  
+		** --mixed : 不删除工作空间改动代码，撤销commit，并且撤销`git add .` 操作**
+		** --soft : 不删除工作空间改动代码，撤销commit，不撤销`git add .` **
 
 +	**查看提交历史的版本号(对应上面的回退处理)**	--- `git reflog`  
 	+	![](./img/reset.png)
